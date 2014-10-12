@@ -10,6 +10,12 @@ Installation
 * Log into Known and click on Administration > Site Features.
 * Click "Enable" next to Diigo.
 
+Configuration
+------------
+
+You will need to get an API key from Diigo by going to https://www.diigo.com/api_keys/. Enter your Diigo username, password, and API key in Settings > Diigo and save.
+
+
 License
 -------
 
