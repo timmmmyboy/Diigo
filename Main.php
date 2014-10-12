@@ -26,7 +26,7 @@
 	                    $object = $event->data()['object'];
                         $digObj = $this->connect();
                         $url = $object->body;
-                        $title = $object->getTitle();
+                        $title = $object->getTitleFromURL($url);
                         $tags = str_replace('#','',implode(',', $object->getTags()));
                         $desc = str_replace($object->getTags(),'',$object->description);
                         $optionalData = array('tags'=>$tags,'desc'=>$desc);
