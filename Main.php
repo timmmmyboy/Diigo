@@ -36,6 +36,7 @@
                         }
                         $response = json_decode($digObj->updateBookMark($url, $title, $optionalData), true);
                         if ($response) {
+                            $object->setPosseLink('diigo', 'https://www.diigo.com/user/' . \Idno\Core\site()->config()->diigo['dgusername']);
                             $object->save();
                         }
                   
