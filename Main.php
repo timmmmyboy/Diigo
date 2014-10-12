@@ -64,7 +64,7 @@
              * @return bool
              */
             function hasDiigo(){
-               if (\Idno\Core\site()->session()->currentUser()->diigo) {
+               if (!empty(\Idno\Core\site()->config()->diigo)) {
                     return true;
                }
 			   return false;
