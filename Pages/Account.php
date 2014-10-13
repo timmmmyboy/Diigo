@@ -14,12 +14,14 @@
 
             function getContent()
             {
+                $this->gatekeeper(); // Logged-in users only
                 $t = \Idno\Core\site()->template();
                 $body = $t->draw('account/diigo');
                 $t->__(['title' => 'Diigo', 'body' => $body])->drawPage();
             }
 
             function postContent() {
+                $this->gatekeeper(); // Logged-in users only
                 $username = $this->getInput('dgusername');
                 $password = $this->getInput('dgpassword');
                 $apiKey = $this->getInput('dgapiKey');
