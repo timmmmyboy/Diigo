@@ -1,13 +1,13 @@
 Diigo for Known
 ====================
 
-This plugin allows Known users to syndicate their bookmarks to Diigo (requires the Like plugin be enabled).
+This plugin allows Known users to syndicate their bookmarks to Diigo (requires the Bookmark plugin be enabled).
 
 Installation
 ------------
 
 * Clone or extract to a folder inside IdnoPlugins in your Known installation.
-* Log into Known and click on Administration > Site Features.
+* Log into Known and click on Site configuration > Plugins.
 * Click "Enable" next to Diigo.
 
 Configuration

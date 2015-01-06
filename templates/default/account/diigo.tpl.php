@@ -1,8 +1,8 @@
 <div class="row">
 
     <div class="span10 offset1">
-        <h1>Diigo</h1>
         <?=$this->draw('account/menu')?>
+        <h1>Diigo</h1>
     </div>
 
 </div>
@@ -10,7 +10,7 @@
     <div class="span10 offset1">
         <form action="/account/diigo/" class="form-horizontal" method="post">
             <div class="control-group">
-                <div class="controls">
+                <div class="controls-config">
                     <p>
                         To publish bookmarks to Diigo, <a href="https://www.diigo.com/api_keys/new/" target="_blank">get an API key from the Diigo site</a> and enter it below along with your Diigo username and password.</p>
                 </div>
@@ -34,8 +34,8 @@
                 </div>
             </div>
             <div class="control-group">
-                <div class="controls">
-                    <button type="submit" class="btn btn-primary">Save</button>
+                <div class="controls-save">
+                    <button type="submit" class="btn btn-primary">Save settings</button>
                 </div>
             </div>
             <?= \Idno\Core\site()->actions()->signForm('/account/diigo/')?>
