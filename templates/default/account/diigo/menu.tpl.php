@@ -1,1 +1,1 @@
-<li <?php if ($_SERVER['REQUEST_URI'] == '/account/diigo/') echo 'class="active"'; ?>><a href="/account/diigo/">Diigo</a></li>
+<li <?php if (strpos($_SERVER['REQUEST_URI'], '/account/diigo/') !== false) echo 'class="active"'; ?>><a href="<?=\Idno\Core\site()->config()->getDisplayURL()?>account/diigo/">Diigo</a></li>
