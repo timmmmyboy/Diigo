@@ -1,1 +1,1 @@
-<i class="icon-diigo"></i>
+<i class="fa fa-bookmark"></i>
