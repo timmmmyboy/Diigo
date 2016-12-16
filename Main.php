@@ -29,6 +29,7 @@
                         $title = $object->getTitleFromURL($url);
                         $tags = str_replace('#','',implode(',', $object->getTags()));
                         $desc = str_replace($object->getTags(),'',$object->description);
+                        $desc = strip_tags($desc);
                         $optionalData = array('tags'=>$tags,'desc'=>$desc);
                         $access = $object->getAccess();
                         if ($access == 'PUBLIC'){
